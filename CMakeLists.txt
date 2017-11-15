@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(ORBTest)
+find_package(OpenCV 2.4.9 REQUIRED)
+add_executable(${PROJECT_NAME} orbTrackTest.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBRARIES})
